@@ -17,6 +17,12 @@ li button {
   --color-primary: #6750a4;
   --color-primary-container: #eaddff;
   --color-on-primary: #ffffff;
+  --color-secondary: #625b71;
+  --color-secondary-container: #e8def8;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #7d5260;
+  --color-tertiary-container: #ffd8e4;
+  --color-on-tertiary: #ffffff;
   --color-surface: #fffbfe;
   --color-on-surface: #1c1b1f;
 }
@@ -24,4 +30,14 @@ li button {
 body {
   background-color: var(--color-surface);
   color: var(--color-on-surface);
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url("../images/hero-section.jpg");
+  background-position: center;
+  background-origin: border-box;
+  background-size: cover;
+  height: 80vh;
 }

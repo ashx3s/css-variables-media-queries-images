@@ -172,3 +172,12 @@ These look similar on screen but serve different purposes.
 
 > If removing the image would make the content harder to understand, use `<img>`.
 > If removing the image just changes the look and feel, use `background-image` in CSS.
+
+---
+
+## Attributions
+
+- [Hero section photo by Alex Muzenhardt](https://unsplash.com/@amuzenhardt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [Foot on board by Mona Eendra](https://unsplash.com/@monaeendra?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [Woman carrying boardby Jan Kopřiva](https://unsplash.com/@jxk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- [Dancing Skater by Linpaul Rodney](https://unsplash.com/@linpaul?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
