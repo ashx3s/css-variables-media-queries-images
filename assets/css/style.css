@@ -1,0 +1,27 @@
+h1 {
+  font-family: "Rubik Dirt", "system-ui", sans-serif;
+}
+
+h2,
+h3,
+p,
+a,
+ul,
+ol,
+li button {
+  font-family: "Rubik", "system-ui", sans-serif;
+}
+
+/* colours */
+:root {
+  --color-primary: #6750a4;
+  --color-primary-container: #eaddff;
+  --color-on-primary: #ffffff;
+  --color-surface: #fffbfe;
+  --color-on-surface: #1c1b1f;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
