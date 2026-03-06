@@ -1,0 +1,36 @@
+/* CSS Variables */
+
+:root {
+  --color-primary: #6750a4;
+  --color-primary-container: #eaddff;
+  --color-on-primary: #ffffff;
+  --color-secondary: #625b71;
+  --color-secondary-container: #e8def8;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #7d5260;
+  --color-tertiary-container: #ffd8e4;
+  --color-on-tertiary: #ffffff;
+  --color-surface: #fffbfe;
+  --color-on-surface: #1c1b1f;
+}
+
+body {
+  background-color: var(--color-surface);
+}
+
+/* Fonts */
+h1 {
+  font-family: "Rubik Distressed", system-ui, sans-serif;
+}
+
+h2,
+h3,
+ul,
+ol,
+li,
+p,
+a,
+button {
+  font-family: "Rubik" sans-serif;
+  color: var(--color-on-surface);
+}
