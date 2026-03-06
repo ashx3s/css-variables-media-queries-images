@@ -16,13 +16,13 @@
 
 body {
   background-color: var(--color-surface);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Fonts */
-h1 {
-  font-family: "Rubik Distressed", system-ui, sans-serif;
-}
-
+h1,
 h2,
 h3,
 ul,
@@ -33,4 +33,47 @@ a,
 button {
   font-family: "Rubik" sans-serif;
   color: var(--color-on-surface);
+}
+
+/* Page Header Styles */
+
+.hero-section {
+  background-image: url("../images/hero-section.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.hero-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  padding: 2rem;
+}
+
+.hero-layout h1 {
+  font-size: clamp(3rem, 10vw, 5rem);
+  font-family: "Rubik Distressed", system-ui, sans-serif;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-actions a {
+  display: block;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 500;
+  background-color: var(--color-on-tertiary);
+  padding: 1.2rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.hero-actions .action-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
 }
