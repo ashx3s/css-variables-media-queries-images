@@ -77,3 +77,62 @@ button {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
 }
+
+/* Card Layout & Design */
+.flex-layout {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100vw;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--color-secondary);
+}
+.card img {
+  width: 40%;
+}
+.card-layout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4px;
+}
+.card-layout p,
+.card-layout h3,
+.card-layout a {
+  width: 30ch;
+  color: var(--color-on-secondary);
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: var(--color-tertiary-container);
+  }
+  .card {
+    width: 20rem;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+  .card img {
+    width: clamp(20rem, 15vw, 26rem);
+    height: clamp(16rem, 10vw, 20rem);
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .card-layout {
+    padding-left: 1rem;
+  }
+  .card-layout h3 {
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  }
+  .card-layout p {
+    max-width: 30ch;
+  }
+  .card-layout a {
+    display: block;
+    padding-bottom: 1rem;
+  }
+}
