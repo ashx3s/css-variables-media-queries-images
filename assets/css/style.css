@@ -41,15 +41,15 @@ button {
   background-image: url("../images/hero-section.jpg");
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
 }
-
+/* TODO: Create overlay on small screen size */
 .hero-layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  /* height: 50%; */
   padding: 2rem;
 }
 
@@ -65,10 +65,11 @@ button {
 
 .hero-actions a {
   display: block;
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
   font-weight: 500;
   background-color: var(--color-on-tertiary);
-  padding: 1.2rem 1rem;
+  text-align: center;
+  padding: 0.5rem 1em;
   border-radius: 25px;
   text-decoration: none;
 }
@@ -108,6 +109,9 @@ button {
   color: var(--color-on-secondary);
 }
 @media screen and (min-width: 768px) {
+  .hero-layout {
+    height: 50%;
+  }
   body {
     background-color: var(--color-tertiary-container);
   }
