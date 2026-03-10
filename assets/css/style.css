@@ -35,6 +35,33 @@ button {
   color: var(--color-on-surface);
 }
 
+.site-header {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 1rem;
+}
+/* TODO: create js toggle for nav-links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 2rem;
+  /* display: none; */
+  gap: 8px;
+}
+.nav-landmark {
+  display: flex;
+  align-items: center;
+}
+.nav-link,
+.nav-home {
+  display: block;
+  text-decoration: none;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  color: var(--color-on-primary);
+}
 /* Page Header Styles */
 
 .hero-section {
@@ -108,6 +135,15 @@ button {
   width: 30ch;
   color: var(--color-on-secondary);
 }
+@media screen and (min-width: 500px) {
+  .site-header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-layout {
     height: 50%;
@@ -115,6 +151,7 @@ button {
   body {
     background-color: var(--color-tertiary-container);
   }
+
   .card {
     width: 20rem;
     border-radius: 20px;
