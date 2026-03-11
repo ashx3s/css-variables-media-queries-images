@@ -106,6 +106,11 @@ button {
   color: var(--color-on-primary);
 }
 
+section header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
 /* Card Layout & Design */
 .flex-layout {
   display: flex;
@@ -115,7 +120,9 @@ button {
 }
 
 .card {
-  width: 100vw;
+  width: 80vw;
+  padding: 12px 0px;
+  border-radius: 20px;
   display: flex;
   gap: 1rem;
   background-color: var(--color-secondary);
@@ -127,6 +134,7 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
+
   padding: 4px;
 }
 .card-layout p,
@@ -135,6 +143,39 @@ button {
   width: 30ch;
   color: var(--color-on-secondary);
 }
+/* Footer Design */
+.site-footer {
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
+  margin-top: 4rem;
+}
+.footer-nav-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.site-footer nav a {
+  color: var(--color-secondary-container);
+  text-decoration: none;
+}
+.footer-nav-items {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-nav-items li {
+  margin-top: 10px;
+}
+.footer-copyright {
+  background-color: var(--color-on-surface);
+  padding: 1rem;
+  text-align: center;
+}
+.footer-copyright p {
+  color: var(--color-on-secondary);
+}
+
 @media screen and (min-width: 500px) {
   .site-header nav {
     display: flex;
@@ -143,7 +184,13 @@ button {
   .nav-links {
     flex-direction: row;
   }
+  .footer-nav-layout {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 50vw;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .hero-layout {
     height: 50%;
